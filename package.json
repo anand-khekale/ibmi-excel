@@ -1,10 +1,10 @@
 {
   "name": "excel",
   "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
+  "description": "Extract advanced Excel on IBM i",
+  "main": "final.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node final.js"
   },
   "author": "www.anandk.dev",
   "license": "ISC",
