@@ -14,9 +14,9 @@ async function generateExcel() {
     const workbook = new Excel.Workbook();
     const worksheet = workbook.addWorksheet('Customers');
 
-    // Define columns in the worksheet, those columns are identified using a key.
+    // Define columns in the worksheet, these columns are identified using a key.
     worksheet.columns = [
-        { header: 'id', key: 'CUSNUM', width: 10 },
+        { header: 'Id', key: 'CUSNUM', width: 10 },
         { header: 'Last Name', key: 'LSTNAM', width: 10 },
         { header: 'Balance Due', key: 'BALDUE', width: 11 },
         { header: 'Credit Limit', key: 'CDTLMT', width: 10 }
@@ -58,7 +58,7 @@ async function generateExcel() {
     const balDue = worksheet.getColumn('BALDUE');
     // Iterate over all current cells in this column
     balDue.eachCell((cell, rowNumber) => {
-        // If the balance due is greater than 400, heighlight it with gradient color 
+        // If the balance due 400 or more, highlight it with gradient color 
         if (cell.value >= 400) {
             cell.fill = {
                 type: 'gradient',

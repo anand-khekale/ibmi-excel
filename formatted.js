@@ -12,7 +12,7 @@ async function generateExcel() {
 
     // Define columns in the worksheet, these columns are identified using a key.
     worksheet.columns = [
-        { header: 'id', key: 'CUSNUM', width: 10 },
+        { header: 'Id', key: 'CUSNUM', width: 10 },
         { header: 'Last Name', key: 'LSTNAM', width: 10 },
         { header: 'Balance Due', key: 'BALDUE', width: 11 },
         { header: 'Credit Limit', key: 'CDTLMT', width: 10 }
