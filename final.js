@@ -58,7 +58,7 @@ async function generateExcel() {
     const balDue = worksheet.getColumn('BALDUE');
     // Iterate over all current cells in this column
     balDue.eachCell((cell, rowNumber) => {
-        // If the balance due 400 or more, highlight it with gradient color 
+        // If the balance due is 400 or more, highlight it with gradient color 
         if (cell.value >= 400) {
             cell.fill = {
                 type: 'gradient',
